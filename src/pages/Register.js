@@ -22,7 +22,7 @@ export default function Register() {
     setError("");
 
     try {
-      await axios.post("http://localhost:5000/api/register", form);
+      await axios.post("https://e-learning-backend-1-qmst.onrender.com/api/register", form);
       navigate("/login");
     } catch (err) {
       setError("User already exists or invalid data");
